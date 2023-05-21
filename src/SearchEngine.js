@@ -44,7 +44,7 @@ function SearchEngine() {
         <input type="submit" value="search" />
       </div>
       {isShown && (
-        <ul>
+        <ul style= {{list: "none" }}>
           The weather in {city} is:
           <li> Temperature: {Temperature().temperature} </li>
           <li> Humidity: {Temperature().humidity} </li>
