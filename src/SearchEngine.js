@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import "./SearchEngine.css";
 
 function SearchEngine() {
   const [city, setCity] = useState(" ");
@@ -44,7 +45,7 @@ function SearchEngine() {
         <input type="submit" value="search" />
       </div>
       {isShown && (
-        <ul style= {{list: "none" }}>
+        <ul >
           The weather in {city} is:
           <li> Temperature: {Temperature().temperature} </li>
           <li> Humidity: {Temperature().humidity} </li>
